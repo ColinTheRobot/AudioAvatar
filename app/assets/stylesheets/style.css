@@ -3,21 +3,26 @@ body {
 }
 
 #container {
-  -webkit-box-sizing: border-dox;
-     -moz-box-sizing: border-dox;
-       -o-box-sizing: border-dox;
-          box-sizing: border-dox;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+       -o-box-sizing: border-box;
+          box-sizing: border-box;
   width: 1000px;
   height: 1500px;
+  margin: 0 auto;
 }
 
 #chart {
   height: 700px;
   width: 1000px;
   margin: 0 auto;
+  margin-top: 50px;
   background-image: url(/assets/color_bg.png);
   background-size: cover;
-  /*background-color: black;*/
+ -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+      -o-border-radius: 10px;
+         border-radius: 10px;
 }
 
 .row1, .row2, .row3, .row4, .row5, .row6, .row7 {
@@ -25,12 +30,8 @@ body {
   height: 100px;
 }
 
-.row1 {
-  /*background-color: white;*/
-}
-
 .box {
-  width: 10px;
+  width: 6.63px;
   height: 98px;
  -webkit-border-radius: 200px;
     -moz-border-radius: 200px;
