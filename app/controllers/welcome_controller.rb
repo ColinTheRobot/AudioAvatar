@@ -1,8 +1,11 @@
 class WelcomeController < ApplicationController
 
-def index
+  def index
 
-end
+  end
 
+  def audio
+
+  end
 
 end
