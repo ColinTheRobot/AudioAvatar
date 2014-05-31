@@ -1,49 +1,72 @@
+body {
+  background-color: black;
+}
+
 #container {
   -webkit-box-sizing: border-dox;
      -moz-box-sizing: border-dox;
        -o-box-sizing: border-dox;
           box-sizing: border-dox;
-  background-color: black;
   width: 1000px;
-
+  height: 1500px;
 }
 
 #chart {
   height: 700px;
-  width: 833px;
+  width: 1000px;
   margin: 0 auto;
-  background-color: black;
+  background-image: url(/assets/color_bg.png);
+  background-size: cover;
+  /*background-color: black;*/
+}
+
+.row1, .row2, .row3, .row4, .row5, .row6, .row7 {
+  width: 1000px;
+  height: 100px;
+}
+
+.row1 {
+  /*background-color: white;*/
 }
 
 .box {
-  width: 50px;
-  height: 50px;
-  border: 1px solid gray;
+  width: 10px;
+  height: 98px;
+ -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+      -o-border-radius: 200px;
+         border-radius: 200px;
+  opacity: 0.15;
+  border: 1px solid black;
   float: left;
 }
 
-.row1 .box, .row2 .box {
-  background-color: #AA49EE;
+.row7 .box {
+  background-color: red;
 }
 
-.row3 .box, .row4 .box {
-  background-color: #0049EE;
-}
-
-.row5 .box, .row6 .box {
-  background-color: #00CD3F;
-}
-
-.row7 .box, .row8 .box {
-  background-color: yellow;
-}
-
-.row9 .box, .row10 .box {
+.row6 .box {
   background-color: orange;
 }
 
-.row11 .box, .row12 .box {
-  background-color: red;
+.row5 .box {
+  background-color: yellow;
+}
+
+.row4 .box {
+  background-color: #00CD3F;
+}
+
+.row3 .box{
+  background-color: #0049EE;
+}
+
+.row2 .box{
+  background-color: #4949EE;
+}
+
+.row1 .box {
+  background-color: #AA49EE;
 }
 
 
