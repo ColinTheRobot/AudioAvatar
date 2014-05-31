@@ -38,3 +38,25 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :development, :test do
+  gem 'launchy'
+  gem 'capybara'
+  gem 'pry-rails'
+  gem 'rails-erd'
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'jasmine'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'rubocop'
+  gem 'annotate'
+  gem 'selenium-webdriver'  # Need firefox for this to work.
+  # gem 'guard'
+  # gem 'guard-rspec'
+  # gem 'guard-bundler', require: false
+  # gem 'terminal-notifier-guard'
+  # gem 'nyan-cat-formatter'
+end
+
+gem 'httparty'
+
+gem 'rails_12factor', group: :production
