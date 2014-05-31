@@ -1,11 +1,11 @@
 class WelcomeController < ApplicationController
 
-def index
+  def index
 
-end
+  end
 
-def getmusic
-  return "/assets/audio/sail.mp3"
-end
+  def audio
+
+  end
 
 end
