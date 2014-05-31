@@ -2,6 +2,10 @@ body {
   background-color: black;
 }
 
+div {
+  margin: 0;
+}
+
 #container {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -13,7 +17,7 @@ body {
 }
 
 #chart {
-  height: 700px;
+  height: 693px;
   width: 1000px;
   margin: 0 auto;
   margin-top: 50px;
@@ -25,103 +29,63 @@ body {
          border-radius: 10px;
 }
 
-.row1, .row2, .row3, .row4, .row5, .row6, .row7 {
-  width: 1000px;
-  height: 100px;
-}
-
-.box {
- -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-      -o-border-radius: 200px;
-         border-radius: 200px;
-  opacity: 0.15;
-}
-
-#column1, #column2, #column3, #column4, #column5, #column6, #column7 {
+.vertical {
   width: 10px;
   height: 700px;
-  border: 1px solid black;
+/*  margin-left: -0.5px;
+  margin-right: -0.5px;*/
   float: left;
 }
 
-
-.red {
-  height: 98px;
+.box {
+  height: 99px;
   width: 8px;
-  border: 1px solid red;
-   -webkit-border-radius: 200px;
+/*-webkit-border-radius: 200px;
     -moz-border-radius: 200px;
       -o-border-radius: 200px;
-         border-radius: 200px;
-  opacity: 0.15;
+         border-radius: 200px;*/
+}
+
+.red {
+  background-color: black;
+  opacity: 1;
 }
 
 .orange {
-  height: 98px;
-  width: 8px;
-  border: 1px solid orange;
-   -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-      -o-border-radius: 200px;
-         border-radius: 200px;
-  opacity: 0.15;
+  background-color: black;
+  opacity: 1;
 }
 
 .yellow {
-  height: 98px;
-  width: 8px;
-  border: 1px solid yellow;
-   -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-      -o-border-radius: 200px;
-         border-radius: 200px;
-  opacity: 0.15;
+  background-color: black;
+  opacity: 1;
 }
 
 .green {
-  height: 98px;
-  width: 8px;
-  border: 1px solid green;
-   -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-      -o-border-radius: 200px;
-         border-radius: 200px;
-  opacity: 0.15;
+  /*border: 1px solid green;*/
+  background-color: black;
+  opacity: 1;
 }
 
 .blue {
-  height: 98px;
-  width: 8px;
-  border: 1px solid blue;
-   -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-      -o-border-radius: 200px;
-         border-radius: 200px;
-  opacity: 0.15;
+  /*border: 1px solid blue;*/
+  background-color: black;
+  opacity: 1;
 }
 
 .indigo {
-  height: 98px;
-  width: 8px;
-  border: 1px solid navy;
-   -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-      -o-border-radius: 200px;
-         border-radius: 200px;
-  opacity: 0.15;
+  /*border: 1px solid navy;*/
+  background-color: black;
+  opacity: 1;
 }
 
-.violet {
-  height: 98px;
-  width: 8px;
-  border: 1px solid purple;
-   -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-      -o-border-radius: 200px;
-         border-radius: 200px;
-  opacity: 0.15;
+.purple {
+  /*border: 1px solid purple;*/
+  background-color: black;
+  opacity: 1;
 }
+
+
 
 
 
