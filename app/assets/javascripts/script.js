@@ -11,4 +11,9 @@ $(document).ready(function(){
       $(divBoxes).appendTo(rowDiv);
     }
   }
+
+  var rand = Math.floor(Math.random() * 100) + 1;
+
+
+
 });
