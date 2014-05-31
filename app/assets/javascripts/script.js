@@ -1,7 +1,7 @@
 $(document).ready(function(){
   for(n=0; n<=7; n++){
-    var row_id = "row" + n;
-    var rowDiv = $('<div/>').attr('id', row_id).appendTo("#chart");
+    var col_id = "column" + n;
+    var colDiv = $('<div/>').attr('id', col_id).appendTo("#chart");
 
     for (i = 0; i <= 100; i++){
       var arr_id = "array" + i;
@@ -13,7 +13,9 @@ $(document).ready(function(){
   }
 
   var rand = Math.floor(Math.random() * 100) + 1;
-  var rand_arrId = "array" + rand;
+  var rand_colId = "column" + rand;
+
+
 
 
 
