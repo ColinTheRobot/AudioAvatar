@@ -31,43 +31,96 @@ body {
 }
 
 .box {
-  width: 6.63px;
-  height: 98px;
  -webkit-border-radius: 200px;
     -moz-border-radius: 200px;
       -o-border-radius: 200px;
          border-radius: 200px;
   opacity: 0.15;
+}
+
+#column1, #column2, #column3, #column4, #column5, #column6, #column7 {
+  width: 10px;
+  height: 700px;
   border: 1px solid black;
   float: left;
 }
 
-.row7 .box {
-  background-color: red;
+
+.red {
+  height: 98px;
+  width: 8px;
+  border: 1px solid red;
+   -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+      -o-border-radius: 200px;
+         border-radius: 200px;
+  opacity: 0.15;
 }
 
-.row6 .box {
-  background-color: orange;
+.orange {
+  height: 98px;
+  width: 8px;
+  border: 1px solid orange;
+   -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+      -o-border-radius: 200px;
+         border-radius: 200px;
+  opacity: 0.15;
 }
 
-.row5 .box {
-  background-color: yellow;
+.yellow {
+  height: 98px;
+  width: 8px;
+  border: 1px solid yellow;
+   -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+      -o-border-radius: 200px;
+         border-radius: 200px;
+  opacity: 0.15;
 }
 
-.row4 .box {
-  background-color: #00CD3F;
+.green {
+  height: 98px;
+  width: 8px;
+  border: 1px solid green;
+   -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+      -o-border-radius: 200px;
+         border-radius: 200px;
+  opacity: 0.15;
 }
 
-.row3 .box{
-  background-color: #0049EE;
+.blue {
+  height: 98px;
+  width: 8px;
+  border: 1px solid blue;
+   -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+      -o-border-radius: 200px;
+         border-radius: 200px;
+  opacity: 0.15;
 }
 
-.row2 .box{
-  background-color: #4949EE;
+.indigo {
+  height: 98px;
+  width: 8px;
+  border: 1px solid navy;
+   -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+      -o-border-radius: 200px;
+         border-radius: 200px;
+  opacity: 0.15;
 }
 
-.row1 .box {
-  background-color: #AA49EE;
+.violet {
+  height: 98px;
+  width: 8px;
+  border: 1px solid purple;
+   -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+      -o-border-radius: 200px;
+         border-radius: 200px;
+  opacity: 0.15;
 }
 
 

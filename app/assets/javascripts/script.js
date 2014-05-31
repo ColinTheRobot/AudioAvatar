@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     for (i = 0; i <= 100; i++){
       var arr_id = "array" + i;
-      var arrayDiv = $('<div>').attr("id", arr_id);
+      var arrayDiv = $('<div>').attr('id', arr_id);
       var miniDivs = $('<div>');
       var divBoxes = miniDivs.addClass("box").appendTo(arrayDiv);
       $(divBoxes).appendTo(rowDiv);
@@ -13,6 +13,9 @@ $(document).ready(function(){
   }
 
   var rand = Math.floor(Math.random() * 100) + 1;
+  var rand_arrId = "array" + rand;
+
+
 
 
 
