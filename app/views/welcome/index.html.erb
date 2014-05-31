@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Synth Pad Web Audio Demo</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <h1>test text</h1>
 
 
@@ -5,4 +15,24 @@
 
 </div>
 
+<h1>Audio Avatar</h1>
 
+  <div id="page-wrapper" class="clearfix">
+    <canvas id="synth-pad"></canvas>
+    <div id="info">
+      <h1>Web Audio Synth Pad</h1>
+      <p>
+        Click and drag the mouse over the synthesiser pad to generate a sound.
+      </p>
+      <p>
+        Frequency: <span id="frequency">n/a</span>
+      </p>
+      <p>
+        Volume: <span id="volume">n/a</span>
+      </p>
+    </div>
+  </div>
+
+  <script src="web_audio.js"></script>
+</body>
+</html>
