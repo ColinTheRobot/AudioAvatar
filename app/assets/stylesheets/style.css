@@ -2,8 +2,10 @@ body {
   background-color: black;
 }
 
-div {
-  margin: 0;
+h1 {
+  font-family: Verdana, sans-serif;
+  color: white;
+  text-align: center;
 }
 
 #container {
@@ -20,7 +22,6 @@ div {
   height: 693px;
   width: 1000px;
   margin: 0 auto;
-  margin-top: 50px;
 /*  background-image: url(/assets/color_bg.png);
   background-size: cover;*/
  -webkit-border-radius: 10px;

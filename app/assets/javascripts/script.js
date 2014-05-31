@@ -14,7 +14,7 @@ $(document).ready(function(){
 
   function lightUp(){
     // color array to randomly choose colors to brighten
-    var colorArr = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple'];
+    var colorArr = ['black','red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple'];
     var randArrIndex = Math.floor(Math.random() * 6) + 1;
     var color = colorArr[randArrIndex];
     var lightedBox = "." + colorArr[randArrIndex];
@@ -26,6 +26,7 @@ $(document).ready(function(){
     // This concats the random column id and box class
     var litUpThingIds = rand_col_Id + " " + lightedBox;
 
+    // This changes the background-color of certain divs
     $(litUpThingIds).css({'background-color': color});
 
   }
@@ -33,6 +34,6 @@ $(document).ready(function(){
   // Randomly lights up colored divs
   setInterval(function() {
       lightUp();
-  }, 500);
+  }, 100);
 
 });
