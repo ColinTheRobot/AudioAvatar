@@ -41,6 +41,7 @@ $(document).ready(function(){
     var litUpThingIds = rand_col_Id + " " + lightedBox;
 
     // This changes the background-color of certain divs
+    //Here is where we will add the dynamic variables
     var bpm = parseInt((106/60) * 100);
     $(litUpThingIds).fadeTo(bpm, 0);
     var rand_time = Math.floor(Math.random() * 5000) + 1;
