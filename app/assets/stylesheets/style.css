@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  font-family: Verdana, sans-serif;
+  font-family: 'Poiret One', cursive;
   color: white;
   text-align: center;
 }
@@ -33,15 +33,13 @@ h1 {
 .vertical {
   width: 10px;
   height: 700px;
-/*  margin-left: -0.5px;
-  margin-right: -0.5px;*/
   float: left;
 }
 
 .box {
   height: 99px;
   width: 8px;
--webkit-border-radius: 200px;
+ -webkit-border-radius: 200px;
     -moz-border-radius: 200px;
       -o-border-radius: 200px;
          border-radius: 200px;
