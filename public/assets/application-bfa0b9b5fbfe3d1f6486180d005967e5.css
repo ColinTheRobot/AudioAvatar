@@ -1,0 +1,108 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  text-align: center;
+}
+
+#container {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+       -o-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 1000px;
+  height: 1500px;
+  margin: 0 auto;
+}
+
+#chart {
+  height: 690px;
+  width: 675px;
+  margin: 0 auto;
+  background-image: url(/assets/color_bg.png);
+  background-size: cover;
+ -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+      -o-border-radius: 10px;
+         border-radius: 10px;
+}
+
+.vertical {
+  width: 10px;
+  height: 700px;
+  float: left;
+  margin: -1px;
+}
+
+.box {
+  height: 99px;
+  width: 12px;
+/* -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+      -o-border-radius: 200px;
+         border-radius: 200px;*/
+}
+
+.red {
+  background-color: black;
+  opacity: 1;
+}
+
+.orange {
+  background-color: black;
+  opacity: 1;
+}
+
+.yellow {
+  background-color: black;
+  opacity: 1;
+}
+
+.green {
+  /*border: 1px solid green;*/
+  background-color: black;
+  opacity: 1;
+}
+
+.blue {
+  /*border: 0.5px solid blue;*/
+  background-color: black;
+  opacity: 1;
+}
+
+.indigo {
+  /*border: 0.5px solid navy;*/
+  background-color: black;
+  opacity: 1;
+}
+
+.purple {
+  /*border: 1px solid purple;*/
+  background-color: black;
+  opacity: 1;
+}
+
+
+
+
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

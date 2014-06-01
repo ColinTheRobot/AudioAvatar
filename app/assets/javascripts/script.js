@@ -40,8 +40,9 @@ $(document).ready(function(){
     // This concats the random column id and box class
     var litUpThingIds = rand_col_Id + " " + lightedBox;
 
-    // This fades boxes in and out according to the beats
-    $(litUpThingIds).fadeTo(333, 0);
+    // This changes the background-color of certain divs
+    var bpm = parseInt((106/60) * 100);
+    $(litUpThingIds).fadeTo(bpm, 0);
     var rand_time = Math.floor(Math.random() * 5000) + 1;
     window.setTimeout($(litUpThingIds).fadeTo(rand_time, 1), rand_time);
   }
@@ -49,6 +50,6 @@ $(document).ready(function(){
   // Randomly lights up colored divs
   setInterval(function() {
       fadeBoxes();
-  }, 100);
+  }, 50);
 
 });
