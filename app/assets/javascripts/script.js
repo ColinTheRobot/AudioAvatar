@@ -12,28 +12,43 @@ $(document).ready(function(){
       var redDiv = $('<div>').addClass("box red").appendTo(colDiv);
   }
 
-  function lightUp(){
-    // color array to randomly choose colors to brighten
+  // function lightUp(){
+  //   // color array to randomly choose colors to brighten
+  //   var colorArr = ['black','red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple'];
+  //   var randArrIndex = Math.floor(Math.random() * 6) + 1;
+  //   var color = colorArr[randArrIndex];
+  //   var lightedBox = "." + colorArr[randArrIndex];
+
+  //   // generates random column number
+  //   var rand = Math.floor(Math.random() * 100) + 1;
+  //   var rand_col_Id = "#column" + rand;
+  //   // This concats the random column id and box class
+  //   var litUpThingIds = rand_col_Id + " " + lightedBox;
+
+  //   // This changes the background-color of certain divs
+  //   $(litUpThingIds).css({'background-color': color});
+  // }
+
+  function fadeBoxes(){
     var colorArr = ['black','red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple'];
     var randArrIndex = Math.floor(Math.random() * 6) + 1;
     var color = colorArr[randArrIndex];
     var lightedBox = "." + colorArr[randArrIndex];
-
     // generates random column number
     var rand = Math.floor(Math.random() * 100) + 1;
     var rand_col_Id = "#column" + rand;
-
     // This concats the random column id and box class
     var litUpThingIds = rand_col_Id + " " + lightedBox;
 
     // This changes the background-color of certain divs
-    $(litUpThingIds).css({'background-color': color});
-
+    $(litUpThingIds).fadeTo(333, 0);
+    var rand_time = Math.floor(Math.random() * 5000) + 1;
+    window.setTimeout($(litUpThingIds).fadeTo(rand_time, 1), rand_time);
   }
 
   // Randomly lights up colored divs
   setInterval(function() {
-      lightUp();
+      fadeBoxes();
   }, 100);
 
 });

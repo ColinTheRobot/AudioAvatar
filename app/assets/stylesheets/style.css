@@ -19,11 +19,11 @@ h1 {
 }
 
 #chart {
-  height: 693px;
-  width: 1000px;
+  height: 690px;
+  width: 675px;
   margin: 0 auto;
-/*  background-image: url(/assets/color_bg.png);
-  background-size: cover;*/
+  background-image: url(/assets/color_bg.png);
+  background-size: cover;
  -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
       -o-border-radius: 10px;
@@ -34,15 +34,16 @@ h1 {
   width: 10px;
   height: 700px;
   float: left;
+  margin: -1px;
 }
 
 .box {
   height: 99px;
-  width: 8px;
- -webkit-border-radius: 200px;
+  width: 12px;
+/* -webkit-border-radius: 200px;
     -moz-border-radius: 200px;
       -o-border-radius: 200px;
-         border-radius: 200px;
+         border-radius: 200px;*/
 }
 
 .red {
@@ -67,13 +68,13 @@ h1 {
 }
 
 .blue {
-  /*border: 1px solid blue;*/
+  /*border: 0.5px solid blue;*/
   background-color: black;
   opacity: 1;
 }
 
 .indigo {
-  /*border: 1px solid navy;*/
+  /*border: 0.5px solid navy;*/
   background-color: black;
   opacity: 1;
 }
