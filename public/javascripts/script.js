@@ -103,7 +103,7 @@ function render() {
 
         // element.css('opacity', opacity);
 
-        if (opacity >=0.5) {
+        if (opacity >=0.45) {
           opacity = opacity
         } else {
           opacity *= 0.5
@@ -113,7 +113,7 @@ function render() {
         var tester = element;
         var randMultiplier = Math.random();
       element.fadeTo(800, opacity, function() {
-            tester.fadeOut(8000*randMultiplier + 1000);
+            tester.fadeOut(9000*randMultiplier + 1000);
       });
       }
 
