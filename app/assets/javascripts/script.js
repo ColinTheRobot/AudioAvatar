@@ -41,7 +41,8 @@ $(document).ready(function(){
     var litUpThingIds = rand_col_Id + " " + lightedBox;
 
     // This changes the background-color of certain divs
-    $(litUpThingIds).fadeTo(333, 0);
+    var bpm = parseInt((106/60) * 100);
+    $(litUpThingIds).fadeTo(bpm, 0);
     var rand_time = Math.floor(Math.random() * 5000) + 1;
     window.setTimeout($(litUpThingIds).fadeTo(rand_time, 1), rand_time);
   }
@@ -49,6 +50,6 @@ $(document).ready(function(){
   // Randomly lights up colored divs
   setInterval(function() {
       fadeBoxes();
-  }, 100);
+  }, 50);
 
 });
