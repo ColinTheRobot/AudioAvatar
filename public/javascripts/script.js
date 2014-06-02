@@ -103,17 +103,21 @@ function render() {
 
         // element.css('opacity', opacity);
 
-        if (opacity >=0.45) {
-          opacity = opacity
+        if (opacity >=0.35 && opacity <=0.65) {
+          opacity += 0.1;
+        } else if (opacity > 0.65 && opacity <= 0.85) {
+          opacity += 0.12;
+        } else if (opacity > 0.85) {
+          opacity = 1.0;
         } else {
-          opacity *= 0.5
+          opacity *= 0.5;
         }
 
         snapshot.append(element);
         var tester = element;
         var randMultiplier = Math.random();
       element.fadeTo(800, opacity, function() {
-            tester.fadeOut(9000*randMultiplier + 1000);
+            tester.fadeOut(18000*randMultiplier + 6000);
       });
       }
 
@@ -128,5 +132,5 @@ function render() {
 
 window.onload = function(){
   audioContext = new webkitAudioContext();
-  loadFile('audios/around_the_world.m4a');
+  loadFile('audios/Roygbiv.mp3');
 }
