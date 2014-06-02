@@ -84,19 +84,19 @@ function render() {
           element.css('background-color', 'rgb(88 ,102 ,172   )');
         } else if (24 < idx && idx <= 30) {
           // pantone blue
-          element.css('background-color', 'rgb(0  ,142 ,207   )');
+          element.css('background-color', 'rgb(21, 68  ,123   )');
         } else if (30 < idx && idx <= 36) {
           // pantone green
-          element.css('background-color', 'rgb(7 , 146 ,113  )');
+          element.css('background-color', 'rgb(7,  159 ,134  )');
         } else if (36 < idx && idx <= 42) {
           //pantone yellow
-          element.css('background-color', 'rgb(255 , 253 ,144  )');
+          element.css('background-color', 'rgb(254 , 224, 63   )');
         } else if (42 < idx && idx <= 48) {
           //pantone orange
-          element.css('background-color', 'rgb(229 , 74 , 20   )');
+          element.css('background-color', 'rgb(248 , 143, 70    )');
         } else if (48 < idx && idx <= 56) {
           //pantone red
-          element.css('background-color', 'rgb(154 , 19 , 53    )');
+          element.css('background-color', 'rgb(188  ,30 , 58    )');
         }
 
         if (idx > 52 && idx <=56){
