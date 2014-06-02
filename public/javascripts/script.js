@@ -65,8 +65,6 @@ function render() {
         ourData.unshift(avgValue);
         low += upwardIncrement;
         high += upwardIncrement;
-        // at this point we want to run the visualization with this tenth of a second worth of data
-        // pseudocode function(visualize(ourData));
 
       }
 
@@ -80,26 +78,38 @@ function render() {
 
         if (12 < idx && idx <= 18 ) {
        // pantone violet
-          element.css('background-color', 'rgb(128 , 81 , 155  )');
+          element.css('background-color', 'rgb(158 , 161 ,204 )');
         } else if (18 < idx && idx <= 24) {
           // pantone indigo
-          element.css('background-color', 'rgb(70, 84 , 191  )');
+          element.css('background-color', 'rgb(88 ,102 ,172   )');
         } else if (24 < idx && idx <= 30) {
           // pantone blue
-          element.css('background-color', 'rgb(0 , 45  ,192  )');
+          element.css('background-color', 'rgb(0  ,142 ,207   )');
         } else if (30 < idx && idx <= 36) {
           // pantone green
-          element.css('background-color', 'rgb(12 ,161 ,123 )');
+          element.css('background-color', 'rgb(7 , 146 ,113  )');
         } else if (36 < idx && idx <= 42) {
           //pantone yellow
-          element.css('background-color', 'rgb(254 , 239 ,123 )');
+          element.css('background-color', 'rgb(255 , 253 ,144  )');
         } else if (42 < idx && idx <= 48) {
           //pantone orange
-          element.css('background-color', 'rgb(244 , 103,  6 )');
+          element.css('background-color', 'rgb(229 , 74 , 20   )');
         } else if (48 < idx && idx <= 56) {
           //pantone red
-          element.css('background-color', 'rgb(217 , 11,  6 )');
+          element.css('background-color', 'rgb(154 , 19 , 53    )');
         }
+
+        if (idx > 52 && idx <=56){
+          element.addClass('bass');
+          element.css('background-color', 'white');
+
+        }
+
+        if (idx >= 12 && idx <=15){
+          element.addClass('treble');
+        }
+
+
 
         // element.css('opacity', opacity);
 
@@ -110,7 +120,7 @@ function render() {
         } else if (opacity > 0.85) {
           opacity = 1.0;
         } else {
-          opacity *= 0.5;
+          opacity *= 0.7;
         }
 
         snapshot.append(element);
@@ -118,11 +128,12 @@ function render() {
         var randMultiplier = Math.random();
       element.fadeTo(800, opacity, function() {
             tester.fadeOut(18000*randMultiplier + 6000);
+
       });
       }
 
     })
-      $("#fun").append(snapshot);
+      $("#main-body").append(snapshot);
       // snapshot.fadeOut(66000);
 
 
