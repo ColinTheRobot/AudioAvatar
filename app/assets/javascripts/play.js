@@ -1,7 +1,7 @@
 $(function(){
 
 var audio = new Audio();
-audio.src = "http://www.stephaniequinn.com/Music/Canon.mp3";
+audio.src = "http://al1perrier.free.fr/mp3/Jamiroquai%20-%20Virtual%20Insanity.mp3";
 audio.controls = true;
 audio.autoplay = false;
 document.body.appendChild(audio);
