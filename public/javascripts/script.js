@@ -3,6 +3,11 @@ var arraybuffer;
 var fftObject;
 var audioSource;
 var samples = 2048;
+var mainBodyWidth = $('#main-body').css('width', window.innerWidth);
+  console.log("main Body width is " + window.innerWidth);
+var snapshotAmount = Math.floor((window.innerWidth)/8)+30; //added 30 to last longer before emptying for smoother transition back to beginning of screen.
+  console.log("snap shot amount is " + snapshotAmount);
+var counter = 0 //Counts how many snapshots have been made.
 
 function loadFile(mp3file) {
     var reqest = new XMLHttpRequest();
@@ -49,8 +54,8 @@ function render() {
     setup = true;
     var upwardIncrement = Math.round((samples/2)/49) - 1;  //floor?
     var ourData = [];
-    setInterval(function(){
 
+    setInterval(function(){
       var data = new Uint8Array(samples);
       fftObject.getByteFrequencyData(data);
 
@@ -60,7 +65,6 @@ function render() {
 
       for (var i=0; i<56; i++){
 
-
         var avgValue = ((getAverage(low, high, data)/255).toFixed(2))/1;
         ourData.unshift(avgValue);
         low += upwardIncrement;
@@ -68,10 +72,10 @@ function render() {
 
       }
 
-        var snapshot = $('<div>').addClass('inner');;
+        var snapshot = $('<div>').addClass('inner');
         var element;
-      $(ourData).each(function(idx, opacity){
 
+      $(ourData).each(function(idx, opacity){
         if (idx >= 12){
           element = $('<div>').addClass('bin');
 
@@ -109,8 +113,6 @@ function render() {
           element.addClass('treble');
         }
 
-
-
         // element.css('opacity', opacity);
 
         if (opacity >=0.35 && opacity <=0.65) {
@@ -126,16 +128,23 @@ function render() {
         snapshot.append(element);
         var tester = element;
         var randMultiplier = Math.random();
+
       element.fadeTo(800, opacity, function() {
             tester.fadeOut(18000*randMultiplier + 6000);
-
+            // console.log(counter);
       });
+      // console.log(counter);
       }
 
     })
       $("#main-body").append(snapshot);
+      // Here is where the div empties so it can repeat at beginning of screen again.
+      counter += 1;
+      // console.log(counter);
       // snapshot.fadeOut(66000);
-
+      if (counter%snapshotAmount==0) {
+        $('#main-body').empty();
+      }
 
       ourData = [];
     }, 100)
