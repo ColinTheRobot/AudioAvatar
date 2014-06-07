@@ -5,7 +5,7 @@ var audioSource;
 var samples = 2048;
 var mainBodyWidth = $('#main-body').css('width', window.innerWidth);
   console.log("main Body width is " + window.innerWidth);
-var snapshotAmount = Math.floor((window.innerWidth)/8)+30; //added 30 to last longer before emptying for smoother transition back to beginning of screen.
+var snapshotAmount = Math.floor((window.innerWidth)/8)+10; //added 30 to last longer before emptying for smoother transition back to beginning of screen.
   console.log("snap shot amount is " + snapshotAmount);
 var counter = 0 //Counts how many snapshots have been made.
 
